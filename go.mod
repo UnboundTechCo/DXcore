@@ -1,4 +1,4 @@
-module github.com/unboundtech/fake-dxcore
+module github.com/unboundtech/DXcore-empty
 
 go 1.24.0
 

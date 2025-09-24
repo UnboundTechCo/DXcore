@@ -3,7 +3,7 @@ package ios
 import (
 	"fmt"
 
-	"github.com/unboundtech/fake-dxcore/DXcore/common"
+	"github.com/unboundtech/DXcore-empty/DXcore/common"
 )
 
 type IosWarpClient struct {
