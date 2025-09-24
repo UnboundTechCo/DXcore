@@ -1,10 +1,10 @@
 package android
 
 import (
+	"fmt"
+
 	"github.com/unboundtech/fake-dxcore/DXcore/common"
 )
-
-// WarpConfig holds the configuration for Warp
 
 type AndroidWarpClient struct {
 	*common.WarpClient
@@ -14,56 +14,44 @@ type ProgressListener interface {
 }
 
 func Stop() bool {
-	return common.Stop()
-}
-
-func StopT2S() {
-	common.GetState().ClientMutex.Lock()
-	defer common.GetState().ClientMutex.Unlock()
-
-	StopTun2socks()
-}
-
-func StartT2S(tunfd int, bindAddress string) bool {
-	return true
+	fmt.Println("Stop")
+	return false
 }
 
 func MeasurePing() int {
-	return common.MeasurePing()
-}
-
-func GetClientFlag() string {
-	return common.GetClientFlag()
+	fmt.Println("MeasurePing")
+	return 0
 }
 
 func GetFlag() string {
-	return common.GetFlag()
+	fmt.Println("GetFlag")
+	return "xx"
 }
 
 func StartVPN(cacheDir, flowLine, pattern string) {
+	fmt.Println("StartVPN")
 	common.StartVPN(cacheDir, flowLine, pattern)
 }
 
 func StopVPN() bool {
-	return common.StopVPN()
-}
-
-func SetProgressListener(l ProgressListener) {
-	common.SetProgressListener(l)
+	fmt.Println("StopVPN")
+	return true
 }
 
 func SetAsnName() {
-	common.SetAsnName()
+	fmt.Println("SetAsnName")
 }
 
 func SetTimeZone(timeDiff float32) bool {
-	return common.SetTimeZone(timeDiff)
+	fmt.Println("SetTimeZone")
+	return true
 }
 
 func GetFlowLine() string {
-	return common.GetFlowLine()
+	fmt.Println("GetFlowLine")
+	return ""
 }
 
-func Log(mssage string) {
-	common.Log(mssage)
+func Log(message string) {
+	common.Log(message)
 }
