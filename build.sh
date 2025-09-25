@@ -86,6 +86,37 @@ init_mobile_bind() {
 }
 
 # Main script
+if [ "$GITHUB_ACTIONS" = "true" ]; then
+    # Auto mode for CI/CD: build both Android and iOS, then exit
+    echo "CI detected: running Android and iOS builds, then exiting."
+    init_mobile_bind
+    echo "Starting Android build..."
+    build_android
+    android_result=$?
+    echo ""
+    echo "Starting iOS build..."
+    build_ios
+    ios_result=$?
+    echo ""
+    echo "===================="
+    echo "Build Summary:"
+    if [ $android_result -eq 0 ]; then
+        echo "✅ Android: SUCCESS"
+    else
+        echo "❌ Android: FAILED"
+    fi
+    if [ $ios_result -eq 0 ]; then
+        echo "✅ iOS: SUCCESS"
+    else
+        echo "❌ iOS: FAILED"
+    fi
+    echo "===================="
+    if [ $android_result -ne 0 ] || [ $ios_result -ne 0 ]; then
+        exit 1
+    fi
+    exit 0
+fi
+
 while true; do
     show_menu
     read -p "Please select an option (1-5): " choice
@@ -151,13 +182,9 @@ while true; do
             fi
             echo ""
             ;;
-        5)
+        *)
             echo "Exiting..."
             exit 0
-            ;;
-        *)
-            echo "❌ Invalid option. Please select 1, 2, 3, 4, or 5."
-            echo ""
             ;;
     esac
 done
