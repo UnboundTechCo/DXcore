@@ -13,6 +13,17 @@ type ProgressListener interface {
 	OnProgress(msg string)
 }
 
+func StartT2S(tunfd int, bindAddress string) {
+	err := StartTun2socks(tunfd, bindAddress)
+	if err != nil {
+		fmt.Println(err)
+	}
+}
+
+func StopT2S() {
+	StopTun2socks()
+}
+
 func Stop() bool {
 	fmt.Println("Stop")
 	return false
@@ -54,4 +65,8 @@ func GetFlowLine() string {
 
 func Log(message string) {
 	common.Log(message)
+}
+
+func SetProgressListener(l ProgressListener) {
+	common.SetProgressListener(l)
 }
