@@ -122,6 +122,6 @@ If you are a copyright holder and believe your license is not properly attribute
 
 ---
 
-### Legal Notice
+## Legal Notice
 
 DXcore is proprietary. It is withheld from public release to protect users against censorship adversaries. Access for audits is provided under NDA to accredited institutions, with public audit summaries published afterward. The DXcore Mock is safe for development/testing only and not a substitute for the real implementation.
