@@ -110,6 +110,18 @@ For audit requests, security reports, or inquiries about controlled DXcore acces
 
 ---
 
+## Third-Party Licenses
+
+This project uses the following third-party components:
+
+- [Warp-Plus](https://github.com/bepass-org/warp-plus): Licensed under terms specified by its authors. Please refer to the official repository for full license details.
+- [Outline](https://github.com/Jigsaw-Code/outline-apps): Licensed under terms specified by its authors. Please refer to the official repository for full license details.
+- [Xray](https://github.com/XTLS/Xray-core): Licensed under terms specified by its authors. Please refer to the official repository for full license details.
+
+If you are a copyright holder and believe your license is not properly attributed, please contact us at **info@defyxvpn.com**.
+
+---
+
 ### Legal Notice
 
 DXcore is proprietary. It is withheld from public release to protect users against censorship adversaries. Access for audits is provided under NDA to accredited institutions, with public audit summaries published afterward. The DXcore Mock is safe for development/testing only and not a substitute for the real implementation.
