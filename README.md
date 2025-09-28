@@ -6,7 +6,7 @@
 
 The decision to keep DXcore closed-source is intentional: it implements advanced and customized censorship-circumvention protocols. Public disclosure of these implementations would make it significantly easier for adversarial systems (e.g., GFW) to analyze, fingerprint, and block them, directly endangering users. This is not secrecy for its own sake — it is an operational security measure in an ongoing struggle to ensure safe, reliable, and unrestricted connectivity.
 
-![Cover](.github/images/cover.jpg)
+![Cover](.github/images/cover.png)
 
 ---
 
