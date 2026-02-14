@@ -114,9 +114,10 @@ For audit requests, security reports, or inquiries about controlled DXcore acces
 
 This project uses the following third-party components:
 
-- [Warp-Plus](https://github.com/bepass-org/warp-plus): Licensed under terms specified by its authors. Please refer to the official repository for full license details.
-- [Outline](https://github.com/Jigsaw-Code/outline-sdk): Licensed under terms specified by its authors. Please refer to the official repository for full license details.
 - [Xray](https://github.com/XTLS/Xray-core): Licensed under terms specified by its authors. Please refer to the official repository for full license details.
+- [Vwarp](https://github.com/voidr3aper-anon/Vwarp): Licensed under terms specified by its authors. Please refer to the official repository for full license details.
+- [Psiphon](https://github.com/UnboundTechCo/psiphon-tunnel-core): Licensed under terms specified by its authors. Please refer to the official repository for full license details.
+- [Outline](https://github.com/Jigsaw-Code/outline-sdk): Licensed under terms specified by its authors. Please refer to the official repository for full license details.
 
 If you are a copyright holder and believe your license is not properly attributed, please contact us at **info@defyxvpn.com**.
 
